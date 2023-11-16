@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+ 
+ *
+{
+margin:0;
+padding:0;
+} 
+html{
+    scroll-behavior: smooth;
+}
+.logo{
+width: 75%;
+display: flex;
+margin-left: 62px;
+margin-right: 41px;
+justify-content: center;
+align-items: center;
+}
+.logo img{
+    width: 40%;
+     height: 80px; 
+    border: 2px solid rgb(33, 11, 54);
+    border-radius: 150px;
+    display:flex;
+}
+.navbar{
+      display:flex;  
+      align-items: center;
+      justify-content: center;
+      position:fixed;
+      cursor: pointer;
+      /* height: 300px; */
+      /* width:1350px ; */
+      width: 100%;
+      background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
+      
+}
+.nav-list
+{
+ width:50%;
+/* background-color:black; */
+display: flex;
+align-items: center;
+} 
+.nav-list li{
+    list-style: none;
+     padding: 4px 13px; 
+     display: flex; 
+     margin-left: auto;
+    
+    /* justify-content:space-between; */
+    
+
+}
+.nav-list li a{
+     text-decoration: none; 
+     color: white;
+     /* display: flex; */
+     font-size: 18px;
+     font-family: 'Ubuntu', sans-serif; 
+     
+
+}
+.nav-list li a:hover{
+    
+    color: grey;
+}
+.rightnav{
+    /* background-color: blueviolet; */
+    width: 30%;
+    text-align:right;
+    padding: 0 23px;
+}
+#search{
+
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid grey;
+    border-radius: 9px;
+}
+.background{
+
+     background:url("/img/images4.jpg");
+     
+    background-size:cover;
+      /* background-blend-mode: darken;   */
+     width: 100%;
+     margin-left: 0px;
+}
+.firstsection{
+    height:1300px;
+    display: flex;
+}
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 50%;
+    margin: auto;
+    height: 300px;
+}
+.firstHalf{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.secondHalf{
+    width: 50%;
+    padding: 14px;
+}
+/* .secondHalf img{
+     width:200px; 
+    width: 80%;
+
+    border: 4px solid white;
+     border-radius: 20px; 
+     border-radius: 1200px; 
+    border-radius: 300%;
+    display:block;
+    margin: auto;
+} */
+.text-big{
+  font-size: 41px;
+  color:black;
+  font-weight: bolder;
+}
+.text-small{
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+
+}
+.btn{
+    padding: 11px 15px;
+    margin: 7px 3px;
+    border:2px solid lightgray;
+    border-radius:8px ;
+    background:none ;
+    color: white;
+    cursor: pointer;
+    font-family:'Ubuntu', sans-serif; 
+    font-size: 15px;
+    font-weight: bolder;
+}
+.btn-dark{
+    color: black;
+    border: 2px solid black;
+    background-color: white;
+}
+.btn-sm{
+
+    padding: 6px 10px;
+    vertical-align: middle;
+    font-size: 16px;
+}
+.section{
+    /* height:850px ; */
+     display: flex; 
+    align-items:center ;
+    justify-content:space-evenly ;
+    max-width:2000px ;
+    margin: auto;
+    font-family: 'Ubuntu', sans-serif;
+    background: linear-gradient(109.2deg, rgb(249, 174, 240) 6.5%, rgb(139, 144, 250) 97.1%);
+    padding: 10px;
+}
+.section-left{
+   
+    flex-direction: row-reverse;
+}
+.thumbnail img{
+    height: 150px;
+    width: 250px;
+    margin-top: 150px;
+    padding: 0px 0px 0px 0px;
+    border: 1px solid blueviolet;
+    border-radius: 26px;
+}
+.paras{
+    padding: 62px 28px 28px 28px;
+}
+.text-small{
+    padding: 30px 20px 20px 10px;
+}
+.sectionSubTag{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: aliceblue;
+}
+.contact{
+   
+    background: linear-gradient(57.4deg, rgb(249, 206, 183) 4.6%, rgb(234, 174, 202) 26%, rgb(210, 182, 226) 49.1%, rgb(173, 209, 242) 86.5%);
+    height: 833px;
+}
+.text-center{
+    text-align: center;
+    padding-top: 30px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 35px;
+}
+.form{
+    max-width: 62%;
+    margin: 25px auto;
+
+}
+.form-input{
+    margin: 14px 0;
+    padding: 5px 13px;
+    width: 100%;
+    font-size: 19px;
+    border: 2px solid grey;
+    border-radius: 6px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.text-footer{
+    text-align: center;
+    padding: 16px 0;
+    font-family: 'Ubuntu', sans-serif;
+    /* font-size: 35px; */
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+    background-color: darkslategrey;
+
+}
+.bottom{
+    /* background-color: black; */
+    background: linear-gradient(68.2deg, rgb(7, 3, 98) -0.1%, rgb(179, 26, 132) 47.7%, rgb(239, 186, 83) 100.2%);
+    width: 100%;
+    height: 65px;
+}
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 3px;
+}
+  @media only screen and (max-width:926px){
+    .navbar{
+        flex-direction: column;
+        transition: all 0.7s ease-out;
+        height: 300px;
+        width: 100%;
+    } 
+    /* .nav-list{
+        flex-direction: column;
+    } */
+    .logo{
+        flex-direction: column;
+    }
+    .nav-list li {
+        /* align-items: center; */
+        /* justify-content: center; */
+        margin-left: 10px;
+    }
+    .rightnav{
+        text-align: center;
+    }
+    .box-main{
+        flex-direction:column-reverse ;
+        max-width: 100%;
+
+    }
+    .section{
+        flex-direction: column-reverse;
+    }
+    #search{
+        width: 100%;
+
+    }
+    .burger{
+        display: block;
+    }
+     .h-nav-resp{
+        height: 72px;
+    }
+     .v-class-resp{
+        opacity: 0;
+    } 
+    .thumbnail img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    } 
+    .text-small{
+        text-align: center;
+        
+    }
+    .text-big{
+        text-align: center;
+        
+    }
+    .buttons{
+        text-align: center;
+        
+    }
+    .paras{
+        padding: 0px;
+    }
+
+}  
